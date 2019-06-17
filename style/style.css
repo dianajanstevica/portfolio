@@ -1,0 +1,383 @@
+
+@import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+body {
+    background-image: url("../images/background.png");
+    background-color: #808080;
+    background-repeat:repeat;
+    background-size: cover;
+}
+
+
+h1 {
+    font-size: 8vh;
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    padding-top: 20px;
+    color: #ff1d11;
+    text-transform: uppercase;
+    
+}
+
+h2 {
+    
+    font-family: 'Megrim', cursive;
+    color: #ff1d11;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    font-size: 4vh;
+
+}
+
+h3 {
+    
+font-family: 'Bungee Hairline', cursive;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 3vh;
+}
+
+
+p {
+    font-family: 'Exo 2', sans-serif;
+    text-align: left;
+    padding: 15px;
+    color: #ffffff;
+
+}
+
+.link {
+    color: #ff1d11;
+}
+
+li {
+    font-family: 'Megrim', cursive;
+    font-size: 4vh;
+
+}
+
+
+
+img {
+    width: 95%;
+    height: auto;
+
+}
+
+footer img {
+    padding: 5px;
+    width: 5%;
+    height: auto;
+    padding-top: 8px;
+    padding-left: 10px;
+
+}
+
+figcaption {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.8em;
+    color: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    width: 16%;
+    height: auto;
+    padding-left: 30px;
+    margin-top: 1em;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    
+
+
+}
+
+nav {
+    float: right;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+   
+
+}
+
+nav a {
+    text-transform: uppercase;
+    font-family: 'Megrim', cursive;
+}
+
+nav a:hover {
+    color: #ff1d11;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #ff1d11;
+    position: relative;
+    top: 0px;
+    width: 0%;
+    transition: all ease-in-out 550ms;
+
+}
+
+nav a:hover::before {
+
+    width: 100%;
+    text-shadow: none;
+}
+
+.active {
+    color: #FF1D11;
+}
+
+
+.button {
+  border-radius: 2px;
+  background-color: #303030;
+  border: none;
+  color: #FF1d11;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+    font-family: 'Megrim', cursive;
+text-transform: uppercase;
+    margin-left: 42%;
+    
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.monster {
+    width: 350px;
+    height: 400px;
+    background: url(http://janstevica.dk/spritesheet/images/monster_sprite.png) left center;
+    animation: play 1.1s steps(16) infinite;
+    align-items: center;
+}
+
+ form {
+            box-sizing: border-box;
+
+           
+            
+          
+            
+        }
+        
+        label{
+            margin-left: 3.5em;
+            font-family: 'Bungee Hairline', cursive;
+            color: white;
+            margin-left: 20vh;
+            
+            
+        }
+        
+
+        
+        input{
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            width:50%;
+            margin-left: 20vh;
+            padding: 1em;
+            background-color: white;
+            border: solid 1px white;
+            cursor: text;
+            
+            
+            
+        }
+
+
+        input[type="submit"]{
+            margin-top: 2em;
+            background-color: #303030;
+            color: #ff1d11;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            width: 30%;
+            margin-left: 30vh;
+            border: solid 1px #303030;
+            padding: 0.4em;
+            font-family: 'Megrim', cursive;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+[placeholder] {
+    font-family: 'Exo 2', sans-serif;
+}
+
+@keyframes play {
+    100% { 
+    background-position: -5600px;
+    }
+}
+
+body {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+        "main main"
+        "footer footer";
+    
+}
+
+header {
+    grid-area: header;
+    background: #808080;
+    position: fixed;
+/*    opacity: 0.5;*/
+    background-color: rgba(0,0,0,0.1);
+    
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background: #808080;
+    align-content: space-between;
+    background-color: rgba(0,0,0,0.1);
+    display: inline-block;
+    
+}
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: auto 1fr 1fr 1fr auto;*/
+    grid-template-areas:
+        "zero zero"
+        "one two"
+        "three four"
+        "five five";
+    padding-top: 190px;
+    
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.one {
+    grid-area: one;
+    
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+    margin-bottom: 8%;
+}
+
+.zero, .one, .two, .three, .four, .five, .six {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.portrait {
+    margin-top: 20%;
+}
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media only screen and (max-width: 1080px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "zero"
+            "one"
+            "two"
+            "three"
+            "four"
+            "five";}
+}
+
+@media only screen and (min-width: 1100px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "zero zero"
+            "one two"
+            "three four"
+            "five five";}
+}
+    
