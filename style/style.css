@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
@@ -6,7 +5,7 @@
 body {
     background-image: url("../images/background.png");
     background-color: #808080;
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -18,11 +17,11 @@ h1 {
     padding-top: 20px;
     color: #ff1d11;
     text-transform: uppercase;
-    
+
 }
 
 h2 {
-    
+
     font-family: 'Megrim', cursive;
     color: #ff1d11;
     text-transform: uppercase;
@@ -33,8 +32,8 @@ h2 {
 }
 
 h3 {
-    
-font-family: 'Bungee Hairline', cursive;
+
+    font-family: 'Bungee Hairline', cursive;
     padding: 10px;
     text-align: center;
     color: white;
@@ -87,7 +86,7 @@ figcaption {
 a {
     text-decoration: none;
     color: #ffffff;
-    
+
 }
 
 
@@ -111,9 +110,6 @@ nav ul {
     color: white;
     margin: 0;
     padding: 5px;
-    
-
-
 }
 
 nav {
@@ -125,7 +121,7 @@ nav li {
     display: inline-block;
     padding: 20px;
     position: relative;
-   
+
 
 }
 
@@ -141,18 +137,18 @@ nav a:hover {
 nav a::before {
     content: '';
     display: block;
+
     height: 2px;
     width: 100%;
-    background-color: #ff1d11;
     position: relative;
     top: 0px;
     width: 0%;
-    transition: all ease-in-out 550ms;
 
+    background-color: #ff1d11;
+    transition: all ease-in-out 550ms;
 }
 
 nav a:hover::before {
-
     width: 100%;
     text-shadow: none;
 }
@@ -163,46 +159,46 @@ nav a:hover::before {
 
 
 .button {
-  border-radius: 2px;
-  background-color: #303030;
-  border: none;
-  color: #FF1d11;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+    border-radius: 2px;
+    background-color: #303030;
+    border: none;
+    color: #FF1d11;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
     font-family: 'Megrim', cursive;
-text-transform: uppercase;
+    text-transform: uppercase;
     margin-left: 42%;
-    
+
 }
 
 .button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
 .button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 .button:hover span {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 
 .button:hover span:after {
-  opacity: 1;
-  right: 0;
+    opacity: 1;
+    right: 0;
 }
 
 .monster {
@@ -213,84 +209,77 @@ text-transform: uppercase;
     align-items: center;
 }
 
- form {
-            box-sizing: border-box;
+form {
+    box-sizing: border-box;
+}
 
-           
-            
-          
-            
-        }
-        
-        label{
-            margin-left: 3.5em;
-            font-family: 'Bungee Hairline', cursive;
-            color: white;
-            margin-left: 20vh;
-            
-            
-        }
-        
-
-        
-        input{
-            display: block;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            width:50%;
-            margin-left: 20vh;
-            padding: 1em;
-            background-color: white;
-            border: solid 1px white;
-            cursor: text;
-            
-            
-            
-        }
+label {
+    margin-left: 3.5em;
+    font-family: 'Bungee Hairline', cursive;
+    color: white;
+    margin-left: 24%;
+}
 
 
-        input[type="submit"]{
-            margin-top: 2em;
-            background-color: #303030;
-            color: #ff1d11;
-            font-size: 1.2em;
-            text-transform: uppercase;
-            width: 30%;
-            margin-left: 30vh;
-            border: solid 1px #303030;
-            padding: 0.4em;
-            font-family: 'Megrim', cursive;
-            border-radius: 2px;
-            cursor: pointer;
-        }
+
+input {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 50%;
+    margin-left: 24%;
+    padding: 1em;
+    background-color: white;
+    border: solid 1px white;
+    cursor: text;
+
+
+
+}
+
+
+input[type="submit"] {
+    margin-top: 2em;
+    background-color: #303030;
+    color: #ff1d11;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    width: 30%;
+    margin-left: 35%;
+    border: solid 1px #303030;
+    padding: 0.4em;
+    font-family: 'Megrim', cursive;
+    border-radius: 2px;
+    cursor: pointer;
+}
 
 [placeholder] {
     font-family: 'Exo 2', sans-serif;
 }
 
 @keyframes play {
-    100% { 
-    background-position: -5600px;
+    100% {
+        background-position: -5600px;
     }
 }
 
 body {
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header"
         "main main"
         "footer footer";
-    
+
 }
 
 header {
     grid-area: header;
     background: #808080;
     position: fixed;
-/*    opacity: 0.5;*/
-    background-color: rgba(0,0,0,0.1);
-    
+    /*    opacity: 0.5;*/
+    background-color: rgba(0, 0, 0, 0.1);
+
 }
 
 main {
@@ -301,9 +290,9 @@ footer {
     grid-area: footer;
     background: #808080;
     align-content: space-between;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     display: inline-block;
-    
+
 }
 
 
@@ -319,7 +308,7 @@ main {
         "three four"
         "five five";
     padding-top: 190px;
-    
+
 }
 
 .zero {
@@ -328,7 +317,7 @@ main {
 
 .one {
     grid-area: one;
-    
+
 }
 
 .two {
@@ -348,17 +337,39 @@ main {
     margin-bottom: 8%;
 }
 
-.zero, .one, .two, .three, .four, .five, .six {
-    background-color: rgba(0,0,0,0.5);
+.zero,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .portrait {
     margin-top: 20%;
 }
+
 video {
     width: 100% !important;
     height: auto !important;
 }
+
+body {
+    animation: addFade 3s;
+}
+
+@keyframes addFade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
 
 @media only screen and (max-width: 1080px) {
     main {
@@ -368,16 +379,25 @@ video {
             "two"
             "three"
             "four"
-            "five";}
+            "five";
+    }
 }
 
 @media only screen and (min-width: 1100px) {
     main {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "zero zero"
             "one two"
             "three four"
-            "five five";}
+            "five five";
+    }
 }
-    
+
+.valid {
+    background: lightgreen;
+}
+
+.invalid {
+    background: lightcoral;
+}
